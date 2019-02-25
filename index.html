@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Foto Finder</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>FOTO <img class="header-logo" src="images/foto-finder-logo.svg"> FINDER</h1>
+      <form class="header-search">
+        <input type="search" name="search" placeholder="Search" class="search-input">
+        <button class="search-button">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+    </header>
+    <main>
+      <section class="form-section">
+        <form class="new-card-form">
+          <label for="title-input" id="title-label" class="form-label">Title</label>
+            <input class="main-input" type="text" id="title-input">
+          <label for="caption-input" id="caption-label" class="form-label">Caption</label>
+            <input type="text" class="main-input" id="caption-input"></input>
+          <label for="file" class="choose-file">Choose a file</label>
+            <input type="file" name="file" id="file" class="inputfile" />
+          <div class="option-buttons">
+            <button class="main-buttons favorites-button">View <span></span> favorites</button>
+            <button class="main-buttons album-button">Add to album</button>
+          </div>
+        </form>
+      </section>
+      <section class="card-section">
+        <!-- NEW CARDS HERE -->
+      </section>
+    </main>
+  </body>
+  <script type="text/javascript" src="photo.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</html>

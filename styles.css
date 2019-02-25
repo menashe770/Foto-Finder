@@ -1,0 +1,197 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+header {
+  background-color: #3B2B34;
+  display: flex;
+  height: 75px;
+  padding: 0px 30px;
+}
+
+h1 {
+  align-self: center;
+  color: #fff;
+  cursor: default;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.header-logo {
+  width: 50px;
+}
+
+.header-search {
+  align-self: center;
+  display: flex;
+  margin-left: auto; 
+}
+
+.search-input {
+  border-radius: 5px 0 0 5px;
+  border: solid 2px #BFB3B4;
+  padding: 5px;
+}
+
+.search-button {
+  background-color: #BFB3B4;
+  border-color: #BFB3B4;
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+  cursor: pointer;
+  padding: 6px;
+  width: 30px;
+}
+
+.search-button:hover {
+  background-color: #524649;
+  border-color: #524649;
+}
+
+
+/*MAIN*/
+
+.form-section {
+  background-color: #3B2B34;
+  display: flex;
+  justify-content: center;
+  padding: 25px 0 20px 0;
+}
+
+.new-card-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  color: #BFB3B4;
+  font-size: 18px;
+  margin: 5px 0;
+  position: relative;
+  top: 4px;
+}
+
+.main-input {
+  width: 550px;
+}
+
+#title-input, 
+#caption-input {
+  border: 0;
+  height: 40px;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.main-buttons {
+  background-color: #584547;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  height: 40px;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.main-buttons:hover {
+  background-color: #908384;
+}
+
+.choose-file {
+  background-color: #584547;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  height: 40px;
+  margin: 35px 0 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.choose-file:hover {
+  background-color: #908384;
+}
+
+.option-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.favorites-button {
+  width: 42%;
+}
+
+.album-button {
+  margin-left: auto;
+  width: 42%;
+}
+
+@media only screen and (max-width: 650px) {
+  header {
+    display: block;
+    height: auto;
+    padding: 0 10px;
+  }
+
+  h1 {
+    font-size: 32px;
+    margin: 0;
+    padding: 20px 0px;
+    text-align: center;
+  }
+
+  .header-logo {
+    width: 42px;
+  }
+
+  .header-search {
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    padding: 10px 0px;
+  }
+
+  .search-input {
+    max-width: 256px;
+    width: 85%;
+  }
+
+  .form-section {
+    padding: 25px 18px 20px;
+  }
+
+  .form-label,
+  .choose-file {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .choose-file {
+    padding-top: 13px;
+  }
+
+  .new-card-form,
+  .main-input {
+    width: 100%;
+  }
+
+  .main-buttons {
+    display: block;
+    font-size: 13px;
+    height: 40px;
+  }
+}
